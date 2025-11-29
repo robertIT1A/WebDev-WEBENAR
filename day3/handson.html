@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cardz {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cards {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        background-color: chocolate;
+    }
+    /* LAPTOP LARGE VIEW */
+    @media (max-width: 1919px) {
+        .cards {
+            background-color: aquamarine;
+        }
+    }
+
+    /* LAPTOP VIEW */
+    @media (max-width: 1439px) {
+        .cardz {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .cards {
+            background-color: coral;
+        }
+    }
+
+    /* TABLET VIEW */
+    @media (max-width: 1023px) {
+        .cards {
+            background-color: dodgerblue;
+        }
+    }
+    /* L\MOBILE VIEW */
+    @media (max-width: 767px) {
+        .cardz {
+            grid-template-columns: 1fr;
+        }
+        .cards {
+            background-color: hotpink;
+        }
+    }
+
+    /* SMALL VIEW */
+    @media (max-width: 424px) {
+
+        .cards {
+            background-color: salmon;
+        }
+    }
+</style>
+<body>
+    <div class="cardz">
+        <div class="cards">DIV 1</div>
+        <div class="cards">DIV 2</div>
+        <div class="cards">DIV 3</div>
+        <div class="cards">DIV 4</div>
+        <div class="cards">DIV 5</div>
+        <div class="cards">DIV 6</div>
+    </div>
+</body>
+</html>

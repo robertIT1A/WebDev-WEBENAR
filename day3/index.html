@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ANd CSS FUNDAMENTAL</title>
+   <style>
+    /* div {
+        padding: 50px;
+        margin: 20px;
+        border: 2px solid black;
+    }
+    div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+    }
+    div.absolute {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+
+    }
+    img {
+        position: absolute;
+        top: 150px;
+    } */
+
+    /* for div center */
+    /* .image {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+     } */
+
+
+     /* .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+     } */
+     /* .item_a {
+        background-color: red;
+     }
+
+     .item_b {
+        background-color: rgb(206, 0, 172);
+     }
+     .item_c {
+        background-color: rgb(136, 255, 0);
+     }
+     .item_d {
+        background-color: rgb(25, 0, 255);
+     } */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+     .grider {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "sidebar header"
+        "sidebar content"
+        "footer footer";
+     }
+     .header {
+        grid-area: header;
+        background-color: red;
+     }
+    .nav {
+        display: flex;
+        /* gap: 20px;  */
+        /* para mag hiwalay */
+        justify-content: space-between;
+        flex-direction: column;
+     }
+     .footer {
+        grid-area: footer;
+        background-color: aquamarine;
+        text-align: center;
+        padding: 20px;
+     }
+     .content {
+        grid-area: content;
+        background-color: rgb(12, 97, 255);
+     }
+     .sidebar {
+        grid-area: sidebar;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 255, 13);
+     }
+     
+    
+   </style>
+</head>
+<body>
+    <!-- <div class="nav">
+        <div class="logo">LOGO</div>
+        <nav class="menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </div>
+
+    <div class="grid">
+        <div class="item_a">A</div>
+        <div class="item_b">B</div>
+        <div class="item_c">C</div>
+        <div class="item_d">D</div>
+    </div> -->
+
+    <div class="grider">
+        <div class="header"><div class="nav">
+            <div class="nav">
+                <div class="logo">LOGO</div>
+                <nav class="menu">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </nav>
+            </div>
+        </div>
+    
+
+        <div class="content">
+            <h1>This is The title</h1>
+            <h3>THIS IS SUBTITLE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempora consectetur necessitatibus eius rerum illo similique corporis. Tenetur nobis reprehenderit adipisci quia fuga nisi maxime, quidem quas necessitatibus, veritatis ipsam!</p>
+        </div>
+
+
+        <div class="sidebar">
+            <a href="">Bakla</a>
+            <a href="">Tomboy</a>
+            <a href="">Baboy</a>
+        </div>
+
+        <div class="footer">This is Develop by Me</div>
+    </div>
+<!-- 
+    <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlceOvoKLvEHNV_jZb-F4OCS__QyQ2x7COvw&s" alt="poster" width="200px">
+    </div> -->
+
+    <!-- <div class="relative">
+        <div class="absolute">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTROD_CLnZMjFqjcffIJKwMXZLhxT9g88tw&s" alt="">
+        </div>
+    </div> -->
+    <!-- <h1>My First Header</h1>
+    <p>My First Paragaph</p>
+    <p>New Paragaph</p>
+    <div class="header">
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <h5>Heading</h5>
+        <h6>Heading</h6>
+        ctrl shift alt  down key -->
+         <!-- para bumaba -->
+            <!-- </div>
+        <pre>
+            roses are red
+            violets are blue
+            my love is for you
+        </pre>
+
+        <button onclick="alert('I Love You')">Click Me</button>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1YwHbd5ZP2dUAPaSKD7EbtGaFujfChiqiGA&s" alt=""> -->
+</body>
+</html>
